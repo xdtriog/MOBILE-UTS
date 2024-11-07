@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         int[] images = new int[] {
                 R.drawable.borobudur,R.drawable.raja_ampat, R.drawable.tana_toraja,
                 R.drawable.danau_toba, R.drawable.bromo, R.drawable.komodo, R.drawable.parangtritis,
-                R.drawable.kawah_ijen, R.drawable.wakatobi, R.drawable.belitung, R.drawable.bunaken,
+                R.drawable.kawah_ijen, R.drawable.tana_toraja, R.drawable.belitung, R.drawable.bunaken,
                 R.drawable.kepulauan_seribu, R.drawable.lombok, R.drawable.tanjung_tinggi, R.drawable.pulau_weh,
                 R.drawable.goa_gong, R.drawable.prambanan, R.drawable.kuta, R.drawable.labuan_bajo,
                 R.drawable.dieng, R.drawable.tmii, R.drawable.pink_beach, R.drawable.rinjani
