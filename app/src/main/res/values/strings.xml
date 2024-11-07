@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">MOBILE UTS KevinDinata</string>
+    <string name="app_name">UTS KEVINDINATA</string>
     <!-- Array Tempat Wisata -->
     <string-array name="tourist_spots_names">
         <item>Borobudur</item>
-        <item>Bali</item>
         <item>Raja Ampat</item>
         <item>Tana Toraja</item>
         <item>Danau Toba</item>
@@ -30,7 +29,6 @@
 
     <string-array name="tourist_spots_locations">
         <item>Magelang, Jawa Tengah</item>
-        <item>Bali</item>
         <item>Papua Barat</item>
         <item>Sulawesi Selatan</item>
         <item>Sumatera Utara</item>
@@ -57,7 +55,6 @@
 
     <string-array name="tourist_spots_descriptions">
         <item>Candi Borobudur adalah situs warisan dunia UNESCO dan merupakan candi Buddha terbesar di dunia, terkenal dengan arsitektur megah dan relief yang menceritakan kisah-kisah Buddha. Terletak di Magelang, Jawa Tengah, candi ini menarik ribuan wisatawan setiap tahun.</item>
-        <item>Bali adalah destinasi wisata paling populer di Indonesia, terkenal dengan pantai pasir putihnya, keindahan alam yang memukau, serta kebudayaan yang kaya. Pulau ini juga dikenal dengan kehidupan malam yang meriah dan tempat-tempat wisata budaya seperti Ubud dan Tanah Lot.</item>
         <item>Raja Ampat adalah surga bagi penyelam dan pecinta alam bawah laut. Terletak di Papua Barat, kepulauan ini terkenal dengan keanekaragaman hayati laut yang luar biasa dan pemandangan alam yang spektakuler.</item>
         <item>Tana Toraja di Sulawesi Selatan terkenal dengan budaya dan tradisi unik, termasuk rumah adat tongkonan dan upacara pemakaman yang sangat khas. Tempat ini menawarkan pemandangan alam yang menakjubkan dengan pegunungan, lembah, dan sawah yang menghijau.</item>
         <item>Danau Toba, yang terletak di Sumatera Utara, adalah danau vulkanik terbesar di Asia Tenggara. Danau ini memiliki pulau Samosir di tengahnya dan pemandangan yang memukau, menjadikannya salah satu tujuan wisata alam terbaik di Indonesia.</item>

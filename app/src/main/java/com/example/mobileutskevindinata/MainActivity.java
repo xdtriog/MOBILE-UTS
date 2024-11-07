@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         String[] descriptions = getResources().getStringArray(R.array.tourist_spots_descriptions);
         // Ambil data gambar dari drawablee
         int[] images = new int[] {
-                R.drawable.borobudur, R.drawable.bali, R.drawable.raja_ampat, R.drawable.tana_toraja,
+                R.drawable.borobudur,R.drawable.raja_ampat, R.drawable.tana_toraja,
                 R.drawable.danau_toba, R.drawable.bromo, R.drawable.komodo, R.drawable.parangtritis,
                 R.drawable.kawah_ijen, R.drawable.wakatobi, R.drawable.belitung, R.drawable.bunaken,
                 R.drawable.kepulauan_seribu, R.drawable.lombok, R.drawable.tanjung_tinggi, R.drawable.pulau_weh,
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Set adapter untuk RecyclerView
         adapter = new TouristSpotAdapter(touristSpots, touristSpot -> {
-            // Kirim data ke DetailActivity melalui Intent
             Intent intent = new Intent(MainActivity.this, DetailActivity.class);
             intent.putExtra("name", touristSpot.getName());
             intent.putExtra("location", touristSpot.getLocation());

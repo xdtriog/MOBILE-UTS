@@ -11,7 +11,7 @@ public class TouristSpot {
         this.name = name;
         this.location = location;
         this.image = image;
-        this.description = description;  // Menyimpan deskripsi
+        this.description = description;
     }
 
     // Getter and Setter
@@ -40,10 +40,10 @@ public class TouristSpot {
     }
 
     public String getDescription() {
-        return description;  // Menambahkan getter untuk deskripsi
+        return description;
     }
 
     public void setDescription(String description) {
-        this.description = description;  // Menambahkan setter untuk deskripsi
+        this.description = description;
     }
 }

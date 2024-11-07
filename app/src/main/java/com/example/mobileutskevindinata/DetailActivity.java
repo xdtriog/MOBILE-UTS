@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Set;
+
 public class DetailActivity extends AppCompatActivity {
 
     private TextView nameTextView, locationTextView, descriptionTextView;
@@ -20,9 +22,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        // Menghubungkan Button dengan ID yang ada di layout
         backButton = findViewById(R.id.back_button);
-        // Set aksi ketika tombol back ditekan
         backButton.setOnClickListener(v -> onBackPressed());
 
         nameTextView = findViewById(R.id.name);
