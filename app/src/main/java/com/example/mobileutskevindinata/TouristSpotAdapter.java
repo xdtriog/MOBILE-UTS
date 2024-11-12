@@ -14,15 +14,22 @@ import java.util.List;
 public class TouristSpotAdapter extends RecyclerView.Adapter<TouristSpotAdapter.ViewHolder> {
 
     private List<TouristSpot> touristSpots;
-    private OnItemClickListener listener;
+    private Context context;
 
+    // Interface untuk item click listener
     public interface OnItemClickListener {
         void onItemClick(TouristSpot touristSpot);
     }
 
-    public TouristSpotAdapter(List<TouristSpot> touristSpots, OnItemClickListener listener) {
-        this.touristSpots = touristSpots;
+    private OnItemClickListener listener;
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
         this.listener = listener;
+    }
+
+    public TouristSpotAdapter(Context context, List<TouristSpot> touristSpots) {
+        this.context = context;
+        this.touristSpots = touristSpots;
     }
 
     @Override
@@ -38,7 +45,12 @@ public class TouristSpotAdapter extends RecyclerView.Adapter<TouristSpotAdapter.
         holder.locationTextView.setText(touristSpot.getLocation());
         holder.imageView.setImageResource(touristSpot.getImage());
 
-        holder.itemView.setOnClickListener(v -> listener.onItemClick(touristSpot));
+        // Set OnClickListener untuk item
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onItemClick(touristSpot);
+            }
+        });
     }
 
     @Override

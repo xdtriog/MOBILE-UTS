@@ -21,7 +21,6 @@
             android:layout_height="80dp"
             android:layout_marginEnd="16dp"
             android:scaleType="centerCrop"
-            android:background="@drawable/image_rounded_bg"
             android:clipToOutline="true" /> <!-- Pastikan gambar mengikuti background -->
 
         <!-- Kontainer teks -->
