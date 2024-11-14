@@ -1,6 +1,5 @@
 package com.example.mobileutskevindinata;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
@@ -94,14 +93,15 @@ public class MainActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {}
         });
 
-        // Handle item click in RecyclerView
+        // Handle item click in RecyclerView to show popup card
         adapter.setOnItemClickListener(touristSpot -> {
-            Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-            intent.putExtra("name", touristSpot.getName());
-            intent.putExtra("location", touristSpot.getLocation());
-            intent.putExtra("image", touristSpot.getImage());
-            intent.putExtra("description", touristSpot.getDescription());
-            startActivity(intent);
+            DetailPopupFragment popup = new DetailPopupFragment(
+                    touristSpot.getName(),
+                    touristSpot.getLocation(),
+                    touristSpot.getDescription(),
+                    touristSpot.getImage()
+            );
+            popup.show(getSupportFragmentManager(), "DetailPopup");
         });
     }
 
